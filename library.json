@@ -5,14 +5,14 @@
   "description": "ESP32 (including ESP32-S2, ESP32-S3 and ESP32-C3), ESP8266 WiFi Connection Manager using AsyncWebServer, with enhanced GUI and fallback Web ConfigPortal. This Library is used for configuring ESP32 (including ESP32-S2, ESP32-S3 and ESP32-C3), ESP8266 modules WiFi Credentials at runtime. You can also specify static DNS servers, personalized HostName, fixed or random AP channel. Now with MultiWiFi auto(Re)connect, configurable CORS Header and auto-Timezone features. Auto detect ESP32 core and use either built-in LittleFS or external LITTLEFS library. Using AsyncDNSServer instead of DNSServer. Now using correct ESP32 chipIP and optionally display Credentials on Config Portal",
   "authors":
   {
-    "name":  "Khoi Hoang",
-    "url":   "https://github.com/khoih-prog",
+    "name":  "Khoi Hoang - minor dependency mods by Olaf Kolkman",
+    "url":   "https://github.com/kolkman",
     "maintainer": true
   },
   "repository":
   {
     "type": "git",
-    "url": "https://github.com/khoih-prog/ESPAsync_WiFiManager"
+    "url": "https://github.com/kolkman/ESPAsync_WiFiManager"
   },
   "homepage": "https://github.com/khoih-prog/ESPAsync_WiFiManager",
   "export": {
@@ -25,17 +25,17 @@
   "dependencies": [
     {
       "name": "AsyncTCP",
-      "version": "https://github.com/me-no-dev/AsyncTCP",
+      "version": "https://github.com/mathieucarbou/AsyncTCP",
       "platforms": [ "espressif32"]
     },
     {
       "name": "ESPAsyncTCP",
-      "version": "https://github.com/khoih-prog/ESPAsyncTCP",
+      "version": "https://github.com/mathieucarbou/ESPAsyncTCP",
       "platforms": [ "espressif8266"]
     },
     {
       "name": "ESP Async WebServer",
-      "version": "https://github.com/khoih-prog/ESPAsyncWebServer",
+      "version": "https://github.com/mathieucarbou/ESPAsyncWebServer",
       "platforms": ["espressif8266", "espressif32"]
     },
     {
@@ -46,7 +46,7 @@
     },
     {
       "name": "ESPAsyncDNSServer",
-      "version": "https://github.com/khoih-prog/ESPAsyncDNSServer",
+      "version": "https://github.com/kolkman/ESPAsyncDNSServer",
       "platforms": ["espressif8266", "espressif32"]
     },
     {
